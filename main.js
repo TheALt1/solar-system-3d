@@ -110,7 +110,7 @@ planetData.forEach((data, index) => {
 // ─────────────────────────────────────────────────────────────────────────────
 function animatePlanets() {
     planets.forEach(planet => {
-        const angle = Date.now() * planet.speed * 0.0005; // Slow rotation
+        const angle = Date.now() * planet.speed * 0.05; // Slow rotation
         planet.mesh.position.x = planet.distance * Math.cos(angle);
         planet.mesh.position.z = planet.distance * Math.sin(angle);
     });
